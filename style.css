@@ -1,0 +1,102 @@
+/* You can do this - take your time - patience */
+
+/* Make sure all HTML elements are styled, even if they aren't 
+class selected */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #1f2937;
+    color: #e5e7eb;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: #e5e7eb;
+    padding: 8px 150px;
+}
+
+.left-links,
+.right-links {
+    display: flex;
+    gap: 8px;
+}
+
+.left-links {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.hero {
+    display: flex;
+    padding: 8px 150px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    text-align: left;
+}
+
+.secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.image {
+    display: flex;
+
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 2px solid red;
+    background: white;
+    color: #1f2937;
+    font-size: 36px;
+    padding: 200px;
+}
+
+.boxes {
+    display: flex;
+    outline: 2px solid red;
+}
+
+.quote {
+    display: flex;
+    background: #e5e7eb;
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    outline: 2px solid red;
+    padding: 32px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    background: #3882F6;
+    outline: 2px solid red;
+    margin: 75px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #e5e7eb;
+    outline: 2px solid red;
+    gap: 8px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: #3882F6;
+}
