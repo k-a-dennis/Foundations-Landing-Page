@@ -5,52 +5,63 @@ class selected */
 
 body {
     display: flex;
+
     flex-direction: column;
     background: #1f2937;
     color: #e5e7eb;
+    font-family: roboto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     color: #e5e7eb;
-    padding: 8px 150px;
+
+    padding: 8px 200px;
 }
 
 .left-links,
 .right-links {
-    display: flex;
-    gap: 8px;
+    gap: 16px;
 }
 
 .left-links {
     font-size: 24px;
+    font-weight: bold;
     color: #F9FAF8;
+}
+
+.right-links {
+    justify-content: flex-end;
 }
 
 .hero {
     display: flex;
-    padding: 8px 150px;
+    justify-content: space-between;
+    padding: 48px 200px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
     text-align: left;
+    max-width: 500px;
 }
 
 .secondary {
+    display: flex;
     font-size: 18px;
     color: #e5e7eb;
 }
 
 .image {
     display: flex;
-
 }
 
-.body {
+.information {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,45 +69,76 @@ body {
     background: white;
     color: #1f2937;
     font-size: 36px;
-    padding: 200px;
+    font-weight: bold;
+    padding: 100px;
+    gap: 8px;
 }
 
 .boxes {
+    display: flex;
+    font-size: 16px;
+    gap: 8px;
+}
+
+.info {
     display: flex;
     outline: 2px solid red;
 }
 
 .quote {
     display: flex;
+    flex-direction: column;
     background: #e5e7eb;
     color: #1f2937;
     font-size: 36px;
     font-style: italic;
-    outline: 2px solid red;
-    padding: 32px;
+    text-align: center;
+    padding: 150px;
+}
+
+.who {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
 }
 
 .action {
     display: flex;
     justify-content: center;
-    background: #3882F6;
+    background: white;
     outline: 2px solid red;
-    margin: 75px;
+    padding: 50px;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background: #3882F6;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 50px;
+    outline: 2px solid red;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     color: #e5e7eb;
-    outline: 2px solid red;
+    padding: 32px;
     gap: 8px;
 }
 
 ul {
     margin: 0;
     padding: 0;
+    gap: 16px;
 }
 
 button {
     background: #3882F6;
+    color: white;
+    max-width: 72px;
+    padding: 2px 8px;
+    border-radius: 8px;
 }
