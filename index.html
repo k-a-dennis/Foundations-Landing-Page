@@ -8,76 +8,80 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="header">
-      <div class="left-links">
-        Header Logo
-      </div>
-      <div class="right-links">
-        <ul>
-          header link one
-          header link two
-          header link three
-        </ul>
-      </div>
-    </div>
+    <div class="container">
 
-    <div class="hero">   
-      <div class="main">
-        This website is awesome
-        <div class="secondary">
-          This website has some subtext that goes here under the main 
-          title. It's a smaller font and the color here is lower 
-          contrast.
+      <nav class="header">
+        <div class="logo">
+          Logo
         </div>
-        <button>Sign up</button>
+        <div class="links">
+          <a href="#">link one</a>
+          <a href="#">link two</a>
+          <a href="#">link three</a>
+        </div>
+      </nav>
+
+      <div class="hero">   
+        <div class="main">
+          This website is awesome
+          <div class="secondary">
+            This website has some subtext that goes here under the main 
+            title. It's a smaller font and the color here is lower 
+            contrast.
+          </div>
+          <button>Sign up</button>
+        </div>
+        <div class="placeholder">
+          <a>This is a placeholder for an image</a>
+        </div>      
       </div>
-      <div class="image">
-        <a>This is a placeholder for an image</a>
-      </div>      
-    </div>
 
-    <div class="information">
-      <div>Some random information.</div>
-      <div class="boxes">
-        <div class="info">
-          This is some subtext under an illustration or image
-        </div>
-        <div class="info">
-          This is some subtext under an illustration or image
-        </div>
-        <div class="info">
-          This is some subtext under an illustration or image
-        </div>
-        <div class="info">
-          This is some subtext under an illustration or image
+      <div class="content">
+        <h3>Nicolas Cage</h3>
+        <div class="content-info">
+          <div class="pic">
+            <img src="https://lh3.googleusercontent.com/dEXMIVEscZnm4GGMHuWS2LeUbJl_GzuADUAg8Ims3x8BU4BSDHDaOvMZEDFyHb9mlzJwqi-P5fN1QDLsMYdYkbRJqmw=w128-h128-e365-rj-sc0x00ffffff">
+            <p>This is some subtext under an image</p>
+          </div>
+          <div class="pic">
+            <img src="data:image/jpeg;base64,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">
+            <p>This is some subtext under an image</p>
+          </div>
+          <div class="pic">
+            <img src="data:image/jpeg;base64,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">
+            <p>This is some subtext under an image</p>
+          </div>
+          <div class="pic">
+            <img src="data:image/jpeg;base64,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">
+            <p>This is some subtext under an image</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="quote">
-      "The best time to plant a tree was 20 years ago. The second best
-        time is now."
-        <div class="who">
-          - Ancient Chinese Proverb
-        </div>
-    </div>
-    
-    <div class="action">
-      <div class="box">
-        Call to action! It's time!
-        <div class="secondary">
-          Sign up for our product by clicking that 
-          button right over there!
-        </div>
-      <button>Sign up</button>
+      <div class="quote">
+        "The best time to plant a tree was 20 years ago. The second best
+          time is now."
+        <b>- Ancient Chinese Proverb</b>
       </div>
-    </div>   
+      
+      <div class="action">
+        <div class="box">
+          <div class="text">
+            Call to action! It's time!
+            <p>Sign up for our product by clicking that 
+              button right over there!</p>
+          </div>
+          <div class="sign-up">
+            <button>Sign up</button>
+          </div>
+        </div>       
+      </div>   
 
-    <div class="footer">
-      Copyright <span>&#169</span> The Odin Project 2022
+      <div class="footer">
+        Copyright <span>&#169</span> The Odin Project 2022
+      </div>
+
     </div>
-  </div>
-
 
   </body>
 </html>

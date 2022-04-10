@@ -1,44 +1,37 @@
-/* You can do this - take your time - patience */
-
-/* Make sure all HTML elements are styled, even if they aren't 
-class selected */
-
 body {
-    display: flex;
-
-    flex-direction: column;
     background: #1f2937;
     color: #e5e7eb;
     font-family: roboto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     color: #e5e7eb;
-
     padding: 8px 200px;
 }
 
-.left-links,
-.right-links {
-    gap: 16px;
-}
-
-.left-links {
+.logo {
     font-size: 24px;
     font-weight: bold;
     color: #F9FAF8;
 }
 
-.right-links {
-    justify-content: flex-end;
+.links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .hero {
     display: flex;
     justify-content: space-between;
-    padding: 48px 200px;
+    padding: 72px 200px;
 }
 
 .main {
@@ -57,32 +50,46 @@ body {
     color: #e5e7eb;
 }
 
-.image {
+.placeholder {
     display: flex;
+    align-items: center;
+    background: #6f6f70;
+    padding: 100px;
 }
 
-.information {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 2px solid red;
     background: white;
     color: #1f2937;
     font-size: 36px;
-    font-weight: bold;
-    padding: 100px;
-    gap: 8px;
+    font-weight: 800;
+    padding-bottom: 90px;
 }
 
-.boxes {
+.content-info {
     display: flex;
+    text-align: center;
+    justify-content: center;
     font-size: 16px;
-    gap: 8px;
+    gap: 48px;
 }
 
-.info {
+.pic {
     display: flex;
-    outline: 2px solid red;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 188px;
+}
+
+img {
+    border: 4px solid #3882F6;
+    border-radius: 16px;
+    width: 180px;
+    height: 180px;
 }
 
 .quote {
@@ -96,9 +103,9 @@ body {
     padding: 150px;
 }
 
-.who {
-    display: flex;
-    justify-content: flex-end;
+.quote b {
+    text-align: right;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -106,19 +113,32 @@ body {
     display: flex;
     justify-content: center;
     background: white;
-    outline: 2px solid red;
-    padding: 50px;
-
+    padding: 75px 200px;
 }
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     background: #3882F6;
+    width: 1200px;
+    padding: 50px 125px;
+    border-radius: 8px;
+}
+
+.box .text {
     font-size: 24px;
-    font-weight: bold;
-    padding: 50px;
-    outline: 2px solid red;
+    font-weight: bolder;
+}
+
+.box .text p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
 }
 
 .footer {
@@ -129,16 +149,16 @@ body {
     gap: 8px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    gap: 16px;
-}
-
 button {
     background: #3882F6;
     color: white;
-    max-width: 72px;
-    padding: 2px 8px;
+    max-width: 120px;
+    font-weight: bold;
+    padding: 2px 24px;
     border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
